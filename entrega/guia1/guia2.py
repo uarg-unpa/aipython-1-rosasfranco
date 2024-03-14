@@ -80,8 +80,47 @@ else:
 #● 60-69, C
 #● 50-59, D
 #● 0-49, F
+
+punt = int(input("Ingrese la puntuación del estudiante: "))
+if 80 <= punt <= 100:
+    print("A")
+elif 70 <= punt <= 79:
+    print("B")
+elif 60 <= punt <= 69:
+    print("C")
+elif 50 <= punt <= 59:
+    print("D")
+else:
+    print("F")
+
 #8. Escriba un programa para una empresa que tiene salas de juegos para todas las
 #edades y quiere calcular de forma automática el precio que debe cobrar a sus
 #clientes por entrar. El programa debe preguntar al usuario la edad del cliente y
 #mostrar el precio de la entrada. Si el cliente es menor de 4 años puede entrar gratis,
 #si tiene entre 4 y 18 años debe pagar $5 y si es mayor de 18 años, $10.
+
+edad = int(input("Ingrese la edad del cliente: "))
+if edad < 4:
+    precio = 0
+elif edad <= 18:
+    precio = 5
+else:
+    precio = 10
+print(f"El precio de la entrada es: ${precio}")
+
+#Para pagar un determinado impuesto se debe ser mayor de 18 años y tener ingresos
+#iguales o superiores a $100000 mensuales. Escribir un programa que pregunte al
+#usuario su edad y sus ingresos mensuales y muestre por pantalla si el usuario tiene
+#que pagar o no el impuesto.
+
+edad = int(input("Ingrese su edad: ."))
+ingresos = float(input("Ingrese sus ingresos mensuales: ."))
+
+if edad > 18:
+    if ingresos >= 100000:
+        print("Debe pagar el impuesto")
+    else:
+        print("No debe pagar el impuesto porque no cumple con el requisito de ingresos.")
+else:
+    print("No debe pagar el impuesto porque no cumple con el requisito de edad.")
+
