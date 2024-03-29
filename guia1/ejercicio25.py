@@ -2,3 +2,6 @@
 
 #Nombre Edad Pais Ciudad
 #Alexa 250 USA CapeCod
+
+print("Nombre\tEdad\tPais\tCiudad")
+print("Alexa\t250\tUSA\tCapeCod")
